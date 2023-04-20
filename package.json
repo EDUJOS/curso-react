@@ -1,0 +1,19 @@
+{
+  "name": "curso-react",
+  "version": "1.0.0",
+  "description": "Mono repo Curso de React Desde cero",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EDUJOS/curso-react.git"
+  },
+  "author": "Ed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EDUJOS/curso-react/issues"
+  },
+  "homepage": "https://github.com/EDUJOS/curso-react#readme"
+}
