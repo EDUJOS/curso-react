@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "workspaces": [
+    "proyectos/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EDUJOS/curso-react.git"
@@ -15,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/EDUJOS/curso-react/issues"
   },
-  "homepage": "https://github.com/EDUJOS/curso-react#readme"
+  "homepage": "https://github.com/EDUJOS/curso-react#readme",
+  "devDependencies": {
+    "standard": "17.0.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
 }
