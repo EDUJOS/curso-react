@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background: #15202b;
+    font-family: system-ui;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+.cont {
+    /* display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: #1e2732;
+    border-radius: 18px;
+    overflow: hidden;
+}
