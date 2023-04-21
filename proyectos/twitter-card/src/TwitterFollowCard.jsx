@@ -1,7 +1,16 @@
-import './App.css'
+import { useState } from 'react'
+
 // eslint-disable-next-line react/prop-types
-export function TwitterFollowCard ({ username, name, isFollowing }) {
-  console.log(isFollowing)
+export function TwitterFollowCard ({ username, name, initialIsFollowing }) {
+  const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
+
+  const text = isFollowing ? 'Siguiendo' : 'Seguir'
+  const btnClassName = isFollowing ? 'tw-followCard-button is-following' : 'tw-followCard-button'
+
+  const handleClick = () => {
+    setIsFollowing(!isFollowing)
+  }
+
   return (
     <article className='tw-followCard'>
       <header className='tw-followCard-header'>
@@ -15,8 +24,9 @@ export function TwitterFollowCard ({ username, name, isFollowing }) {
       </header>
 
       <aside>
-        <button className='tw-followCard-button'>
-          Seguir
+        <button onClick={handleClick} className={btnClassName}>
+          <span className='tw-followCard-text'>{text}</span>
+          <span className='tw-followCard-stopFollow'>Dejar de seguir</span>
         </button>
       </aside>
     </article>
