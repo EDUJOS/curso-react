@@ -59,7 +59,6 @@ function App () {
   return (
     <main className='board'>
       <h1>Tres en raya</h1>
-      <button onClick={resetGame}>Reset del juego</button>
       <section className='game'>
         {
           board.map((square, index) => {
@@ -80,6 +79,7 @@ function App () {
         <Square isSelected={turn === TURNS.X}>
           {TURNS.X}
         </Square>
+        <button onClick={resetGame}>Reset del juego</button>
         <Square isSelected={turn === TURNS.O}>
           {TURNS.O}
         </Square>
